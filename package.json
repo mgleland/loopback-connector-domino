@@ -1,6 +1,6 @@
 {
   "name": "loopback-connector-domino",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Domino LoopBack Connector",
   "main": "index.js",
   "dependencies": {
@@ -12,6 +12,6 @@
   },
   "repository" : {
     "type" : "git",
-    "url" : "https://github.com/jacobx1/loopback-domino-connector"
+    "url" : "https://github.com/jacobx1/loopback-connector-domino"
   }
 }
