@@ -68,7 +68,7 @@ Add the following new data source to **/loopback-getting-started/server/datasour
   }
 ```
 
-Be sure to tune the values of `serverURL`, `userName` and `password` to you specific Domino
+Be sure to tune the values of `serverURL`, `userName` and `password` to your specific Domino
 server.  The `userName` value can be any user that can authenticate to your Domino server
 over HTTP.
 
