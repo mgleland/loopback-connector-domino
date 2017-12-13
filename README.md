@@ -12,11 +12,43 @@ and then use it in your own LoopBack API.
 
 ### Prerequisites
 
-- A Domino server runnint the HTTP task.  This server must have the Domino data API enabled.
+- A Domino server running the HTTP task.  This server must have the Domino data API enabled.
 - Node.js and npm.
 - A clone of [loopback-getting-started](https://github.com/strongloop/loopback-getting-started).
 If you haven't already done so, clone **loopback-getting-started** first.
 
 ### Installation
 
-Clone this repository on the same system where you installed **loopback-getting-started**...
+Clone this repository on the same system where you installed **loopback-getting-started**.  Then 
+copy [Coffee.nsf](sample-nsf/Coffee.nsf) to the data directory of your Domino server.
+
+**Important:** [Coffee.nsf](sample-nsf/Coffee.nsf) is just a sample database to get you started.
+This connector will work with any Domino database enabled for the data API.
+
+### Checkout step2 of loopback-getting-started
+
+```
+cd /loopback-getting-started
+git checkout -f step2
+npm install
+```
+
+This step is required because **step2** of the tutorial connects the CoffesShops model
+to a SQL server hosted by StrongLoop.  In a minute, we'll show you how to switch the
+data source from SQL to Domino.
+
+### Add loopback-connector-domino to loopback-getting-started
+
+```
+cd /loopback-getting-started
+npm install --save /loopback-domino-connector
+```
+
+Of course, in the `npm install` step you need to specify the full path to the location
+where you cloned **loopback-domino-connector**.
+
+### Modify loopback-getting-started
+
+
+```
+```
