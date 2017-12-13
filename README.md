@@ -15,7 +15,8 @@ and then use it in your own LoopBack API.
 - A Domino server running the HTTP task.  This server must have the Domino data API enabled.
 - Node.js and npm.
 - A clone of [loopback-getting-started](https://github.com/strongloop/loopback-getting-started).
-If you haven't already done so, clone **loopback-getting-started** first.
+If you haven't already done so, clone [loopback-getting-started](https://github.com/strongloop/loopback-getting-started) 
+first.
 
 ### Installation
 
@@ -44,11 +45,48 @@ cd /loopback-getting-started
 npm install --save /loopback-domino-connector
 ```
 
-Of course, in the `npm install` step you need to specify the full path to the location
+Of course, in the `npm install` step above you need to specify the full path to the location
 where you cloned **loopback-domino-connector**.
 
 ### Modify loopback-getting-started
 
+First, remove **/loopback-getting-started/server/boot/create-sample-models.js** from your local
+repository.  You don't need this script because **Coffee.nsf** already includes some
+dample data.
+
+Add the following new data source to **/loopback-getting-started/server/datasources.json**:
 
 ```
+  "myDominoDs": {
+    "name": "myDominoDs",
+    "connector": "domino",
+    "serverURL": "http://your.server.com",
+    "userName": "First Last",
+    "password": "password",
+    "database": "coffee.nsf",
+    "view": "shops"
+  }
 ```
+
+Be sure to tune the values of `serverURL`, `userName` and `password` to you specific Domino
+server.  The `userName` value can be any user that can authenticate to your Domino server
+over HTTP.
+
+Now replace the CoffeeShop model data source in **/loopback-getting-started/server/datasources.json**.
+Specify `myDominoDs` instead of `mySqlDs`:
+
+```
+  "CoffeeShop": {
+    "dataSource": "myDominoDs",
+    "public": true
+  }
+```
+
+### Try the new LoopBack API
+
+```
+cd /loopback-getting-started
+node .
+```
+
+Now open the API Explorer (http://localhost:3000/explorer) and try the **GET /CoffeeShops** operation.
