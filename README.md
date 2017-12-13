@@ -52,7 +52,7 @@ where you cloned **loopback-domino-connector**.
 
 First, remove **/loopback-getting-started/server/boot/create-sample-models.js** from your local
 repository.  You don't need this script because **Coffee.nsf** already includes some
-dample data.
+sample data.
 
 Add the following new data source to **/loopback-getting-started/server/datasources.json**:
 
@@ -82,7 +82,7 @@ Specify `myDominoDs` instead of `mySqlDs`:
   }
 ```
 
-### Try the new LoopBack API
+### Try the Modified LoopBack API
 
 ```
 cd /loopback-getting-started
