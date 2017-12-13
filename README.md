@@ -90,3 +90,13 @@ node .
 ```
 
 Now open the API Explorer (http://localhost:3000/explorer) and try the **GET /CoffeeShops** operation.
+It should read the list of coffe shops from the **Coffee.nsf** database on your Domino server.  
+
+You can also try other operations including:
+
+- **POST /CoffeeShops** - Create a new shop
+- **PUT /CoffeeShops/{id}** - Update an existing shop by ID
+- **DELETE /CoffeShops/{id}** - Remove a shop
+
+Since the model is bound to the **Coffee.nsf** database, all operations should be handled by
+your Domino server.
