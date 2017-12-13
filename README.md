@@ -42,11 +42,11 @@ data source from SQL to Domino.
 
 ```
 cd /loopback-getting-started
-npm install --save /loopback-domino-connector
+npm install --save /loopback-connector-domino
 ```
 
 Of course, in the `npm install` step above you need to specify the full path to the location
-where you cloned **loopback-domino-connector**.
+where you cloned **loopback-connector-domino**.
 
 ### Modify loopback-getting-started
 
