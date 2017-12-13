@@ -72,8 +72,8 @@ Be sure to tune the values of `serverURL`, `userName` and `password` to your spe
 server.  The `userName` value can be any user that can authenticate to your Domino server
 over HTTP.
 
-Now replace the CoffeeShop model data source in **/loopback-getting-started/server/datasources.json**.
-Specify `myDominoDs` instead of `mySqlDs`:
+Now replace the CoffeeShop model data source in **/loopback-getting-started/server/model-config.json**.
+Specify `myDominoDs` instead of `mysqlDs`:
 
 ```
   "CoffeeShop": {
