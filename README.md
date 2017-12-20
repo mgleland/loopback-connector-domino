@@ -64,7 +64,8 @@ Add the following new data source to **/loopback-getting-started/server/datasour
     "userName": "First Last",
     "password": "password",
     "database": "coffee.nsf",
-    "view": "shops"
+    "view": "shops",
+    "form": "Shop"
   }
 ```
 
