@@ -9,7 +9,7 @@ Contributing to `loopback-connector-domino` is easy. In a few simple steps:
 
   * Make something better or fix a bug.
 
-  * Sign the DCO below
+  * Sign the DCO below in a commit message like: "DCO 1.1 Signed-off-by: Random J Developer <random@developer.org>"
 
   * Submit a pull request through Github.
 
