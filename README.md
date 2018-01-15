@@ -100,4 +100,6 @@ You can also try other operations including:
 - **DELETE /CoffeShops/{id}** - Remove a shop
 
 Since the model is bound to the **Coffee.nsf** database, all operations are handled by
-your Domino server.
+your Domino server.  You might want to verify the changes by opening **Coffee.nsf** in
+the Notes client.  As you make each change in the API Explorer, compare the results in
+Notes.
