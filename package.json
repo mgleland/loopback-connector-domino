@@ -5,13 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "loopback-connector": "2.3.0",
-    "request": "2.81.0"
+    "request": "2.85.0"
   },
   "devDependencies": {
     "mocha": "~2.0.1"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/jacobx1/loopback-connector-domino"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgleland/loopback-connector-domino"
   }
 }
