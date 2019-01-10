@@ -1,15 +1,15 @@
 {
   "name": "loopback-connector-domino",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Domino LoopBack Connector",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "loopback-connector": "2.3.0",
-    "request": "2.85.0"
+    "loopback-connector": "4.5.1",
+    "request": "2.88.0"
   },
   "devDependencies": {
-    "mocha": "~2.0.1"
+    "mocha": "~5.2.0"
   },
   "repository": {
     "type": "git",
